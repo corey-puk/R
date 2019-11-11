@@ -9,7 +9,7 @@ elephants <- case2201
 
 head(elephants)
 
-hist(elephants[,2])
+hist(elephants[,2], main="Histogram of Elephant Matings", xlab="Rate")
 
 # Create the MLE for Poisson using glm and log-link
 elephants.glm1 <- glm(Matings ~ Age, data = elephants, family = poisson(link = log))
