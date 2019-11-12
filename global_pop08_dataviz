@@ -1,0 +1,12 @@
+# All code is executable from your R session
+
+install.packages("cartography")
+
+library(cartography)
+
+data(nuts2006)
+
+
+choroLayer(spdf = nuts2.spdf, df = nuts2.df, var = "pop2008" , legend.pos = "right",
+           legend.title.txt = "Global Population Statistics")
+title("Population in 2008")
