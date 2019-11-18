@@ -36,4 +36,10 @@ donner.neg.ll <- function(beta0, beta1, beta2) {
 summary(glm(Surv ~ Age + Sex, donner, family = binomial(link = logit)))
 
 
+# As this is a logistic regression be mindful that immediate interpretation of the coefficients is in terms of 'likelihoods'
+# and that you must exponentiate the coefficient to be able to interpret, as it is currently linked via a log-link 
+
+
+
+
 
